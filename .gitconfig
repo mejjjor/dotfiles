@@ -17,8 +17,8 @@
 	tool = vim
 
 [core]
-	editor = subl3 -n -w
-	excludesFile = /home/erik/dots/.gitignore
+	editor = subl -n -w
+	excludesFile = ~/.gitignore
 [pull]
 	rebase = true
 	default = current
