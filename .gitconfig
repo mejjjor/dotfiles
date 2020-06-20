@@ -1,0 +1,29 @@
+[user]
+    name = erik
+    email = erik.aouizerate@gmail.com
+
+[color]
+	ui = auto
+	status = auto
+	diff = auto
+
+[push]
+	default = current
+
+[difftool]
+	prompt = true
+
+[diff]
+	tool = vim
+
+[core]
+	editor = subl3 -n -w
+	excludesFile = /home/erik/dots/.gitignore
+[pull]
+	rebase = true
+	default = current
+
+[push]
+	default = current
+[rerere]
+	enabled = true
