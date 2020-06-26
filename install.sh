@@ -128,6 +128,10 @@ case $answer in
     sudo apt-get update
     sudo apt-get install google-chrome-stable
 
+    # android
+    sudo apt install android-sdk
+    sudo apt-get install openjdk-8-jdk  
+
     echo "$(tput setaf 2)All dependencies are up to date$(tput sgr0)"
     ;;
   *)
