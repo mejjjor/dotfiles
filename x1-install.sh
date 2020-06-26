@@ -50,21 +50,11 @@ safelink()
   $DO_LINK && platformlink $target $link
 }
 
-safeinstall() {
-  package=$1
-
-  if type yaourt > /dev/null; then
-    sudo yaourt -Sq --needed $package
-  else
-    sudo pacman -Sq --needed $package
-  fi
-}
-
 BASEDIR=$(cd "$(dirname "$0")"; pwd)
 
 
 # trackpad driver
-safeinstall xf86-input-synaptics
+sudo apt install xserver-xorg-input-synaptics
 
 safelink $BASEDIR/config-x1/70-synaptics.conf.default /usr/share/X11/xorg.conf.d/70-synaptics.conf.default
 safelink $BASEDIR/config-x1/70-synaptics.conf /usr/share/X11/xorg.conf.d/70-synaptics.conf
