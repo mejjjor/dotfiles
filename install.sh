@@ -97,7 +97,10 @@ case $answer in
     sudo apt install nomachine
     sudo apt install gnome-shell-extensions-gpaste gpaste
     sudo apt install fzf
-    
+
+    # firefox video driver
+    sudo apt install libavcodec-extra
+
     # vscode
     sudo apt install software-properties-common apt-transport-https wget
     wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
