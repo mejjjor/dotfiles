@@ -537,3 +537,6 @@ exec --no-startup-id $i3-wm.program.3
 
 # gpaste (clipboard)
 bindsym $mod+x exec gpaste-client ui
+
+# Parsys / assign station to workspace 2
+assign [class="station"] $ws2
