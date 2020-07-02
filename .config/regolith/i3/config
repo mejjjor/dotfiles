@@ -72,7 +72,7 @@ set_from_resource $ws19 i3-wm.workspace.19.name "19"
 ###############################################################################
 
 ## Launch // Terminal // <> Enter ##
-bindsym $mod+Return exec gnome-terminal  --working-directory="$(xcwd)"
+bindsym $mod+Return exec gnome-terminal  --working-directory="`xcwd`"
 
 ## Launch // Browser // <><Shift> Enter ##
 bindsym $mod+Shift+Return exec gtk-launch $(xdg-settings get default-web-browser)
