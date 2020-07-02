@@ -135,6 +135,10 @@ case $answer in
     sudo apt install android-sdk
     sudo apt-get install openjdk-8-jdk  
 
+    # docker
+    sudo apt install docker
+    sudo apt install docker-compose
+
     echo "$(tput setaf 2)All dependencies are up to date$(tput sgr0)"
     ;;
   *)
