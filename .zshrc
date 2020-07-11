@@ -33,6 +33,7 @@ alias gp="git push"
 alias gpf="git push --force-with-lease"
 alias gst="git status"
 alias gsu="git stash -u"
+alias gsp="git stash pop"
 alias gsc="git stash clear"
 alias gd="git diff"
 
