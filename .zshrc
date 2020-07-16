@@ -41,6 +41,8 @@ alias gd="git diff"
 alias l="ls"
 alias ls="ls --color"
 
+alias cat="batcat"
+
 # ssh-agent
 alias ssha="ssh-add $HOME/.ssh/id_rsa"
 

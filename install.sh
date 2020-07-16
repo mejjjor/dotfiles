@@ -93,13 +93,21 @@ case $answer in
 
     safeinstall vim
     safeinstall zsh
+
+    sudo snap install vlc
     sudo snap install sublime-text --classic
+
     sudo apt install nomachine
     sudo apt install gnome-shell-extensions-gpaste gpaste
     sudo apt install fzf
+    sudo apt install bat
 
     # firefox video driver
     sudo apt install libavcodec-extra
+
+    # vlc codec mp4 (and more maybe...)
+    sudo apt install libdvdnav4 libdvd-pkg gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly libdvd-pkg
+    sudo apt install ubuntu-restricted-extras
 
     # vscode
     sudo apt install software-properties-common apt-transport-https wget
