@@ -34,6 +34,7 @@ alias gpf="git push --force-with-lease"
 alias gst="git status"
 alias gsu="git stash -u"
 alias gsp="git stash pop"
+alias gsa="git stash apply"
 alias gsc="git stash clear"
 alias gd="git diff"
 
@@ -41,7 +42,7 @@ alias gd="git diff"
 alias l="ls"
 alias ls="ls --color"
 
-alias cat="batcat"
+alias bat="batcat"
 
 # ssh-agent
 alias ssha="ssh-add $HOME/.ssh/id_rsa"
@@ -57,7 +58,7 @@ export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/"
 export ANDROID_HOME=/usr/lib/android-sdk
 export ANDROID_SDK_ROOT=/usr/lib/android-sdk
 
-export PATH="$JAVA_HOME/bin:$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$JAVA_HOME/bin:$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.local/bin:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

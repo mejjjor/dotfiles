@@ -101,6 +101,7 @@ case $answer in
     sudo apt install gnome-shell-extensions-gpaste gpaste
     sudo apt install fzf
     sudo apt install bat
+    sudo apt-get install tig
 
     # firefox video driver
     sudo apt install libavcodec-extra
@@ -125,6 +126,12 @@ case $answer in
     # node / npm by nvm 
     nvm install node
     npm i -g yarn
+
+    # python
+    sudo apt install software-properties-common
+    sudo apt install python3.8
+    sudo apt install python3-pip
+    pip3 install pipenv
 
     # oh-my-zsh
     curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | bash
