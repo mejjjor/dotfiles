@@ -73,7 +73,6 @@ safelink $BASEDIR/.gitignore $HOME/.gitignore
 safelink $BASEDIR/.zshrc $HOME/.zshrc
 safelink $BASEDIR/.p10k.zsh $HOME/.p10k.zsh
 
-
 # -- [[ Package / plugins installation ]] --------------------------------------
 echo
 echo -n "Do you want to check packages? ([y]es/[N]o) "
@@ -122,9 +121,10 @@ case $answer in
     sudo apt install regolith-desktop i3xrocks-net-traffic i3xrocks-cpu-usage i3xrocks-time
 
     # nvm
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+    curl -fsSL https://fnm.vercel.app/install | bash
     # node / npm by nvm 
-    nvm install node
+    fnm install 12.19.0
+    fnm use 12.19.0
     npm i -g yarn
 
     # python
