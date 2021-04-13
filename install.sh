@@ -154,6 +154,9 @@ case $answer in
     sudo apt install docker
     sudo apt install docker-compose
 
+    # Corsair mouse driver options 
+    sudo apt install ckb-next
+
     echo "$(tput setaf 2)All dependencies are up to date$(tput sgr0)"
     ;;
   *)
